@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Todos API', type: :request do
     # initialize test data
-    let!(:todos) { create_list(:todo, to) }
+    let!(:todos) { FactoryGirl.create_list(:todo, 10) }
     let(:todo_id) { todos.first.id }
 
     # Test suite for GET /todos
@@ -31,6 +31,7 @@ RSpec.describe 'Todos API', type: :request do
                 expect(json).not_to be_empty
                 expect(json['id']).to eq(todo_id)
             end
+        end
 
         it 'returns status code 200' do
             expect(response).to have_http_status(200)
@@ -81,7 +82,7 @@ RSpec.describe 'Todos API', type: :request do
     end
 
     # Test suite for PUT /todos/:id
-    describe 'PUT /todos/:id' does
+    describe 'PUT /todos/:id' do
         let(:valid_attributes) { { title: 'Shopping' } }
 
         context 'when the record exists' do

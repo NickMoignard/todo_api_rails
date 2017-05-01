@@ -83,4 +83,11 @@ RSpec.configuration do |config|
   end
 end
 
+# Disable support directory auto-loading and then
+# include RequestSpecHelper as a shared module for all request specs
 
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
+RSpec.configuration do |config|
+  config.include RequestSpecHelper, type: :request
+end
