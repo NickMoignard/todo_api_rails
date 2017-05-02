@@ -1,0 +1,251 @@
+{
+	"id": "70d63462-976f-d3e5-37be-302056793bec",
+	"name": "rails REST API todo-tutorial",
+	"description": "",
+	"order": [
+		"b8f8640f-7cb5-97df-4d2f-38ea9a2a502d",
+		"43084067-83c2-c116-235e-93a58c413dc9",
+		"c23092a9-4e44-6210-6bb7-921530330663",
+		"5ce4ce83-9008-3581-ed5f-dcd95d4a01de",
+		"33429778-f8bf-dd14-5d1a-1942bebc22ff",
+		"f067baf2-c239-7742-0b6f-e76850c799a0",
+		"9784ef82-30c8-80f8-a6b9-dde361833123",
+		"17887f77-49ec-5f68-faad-3af6278f686a"
+	],
+	"folders": [],
+	"timestamp": 1493644868167,
+	"owner": "1978916",
+	"public": false,
+	"requests": [
+		{
+			"id": "17887f77-49ec-5f68-faad-3af6278f686a",
+			"headers": "",
+			"url": "localhost:3000/todos/4/items/3",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"data": [
+				{
+					"key": "name",
+					"value": "learn how to dance",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "done",
+					"value": "false",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "DELETE /todos/:todo_id/items/:id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1493702709885,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "33429778-f8bf-dd14-5d1a-1942bebc22ff",
+			"headers": "",
+			"url": "localhost:3000/todos/4/items",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"data": [
+				{
+					"key": "name",
+					"value": "learn how to dance",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "done",
+					"value": "false",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "POST /todos/:todo_id/items",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1493702578222,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "43084067-83c2-c116-235e-93a58c413dc9",
+			"headers": "title: wabbalubbadingdong\ncreated_by: 69\n",
+			"url": "localhost:3000/todos",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"data": [
+				{
+					"key": "title",
+					"value": "DINGO",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "created_by",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "POST /todos",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1493644915794,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "5ce4ce83-9008-3581-ed5f-dcd95d4a01de",
+			"headers": "//title: wabbalubbadingdong\n//created_by: 1\n",
+			"url": "localhost:3000/todos/4",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "title",
+					"value": "hello_world",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1493702473477,
+			"name": "PUT /todos/:id",
+			"description": "",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"responses": []
+		},
+		{
+			"id": "9784ef82-30c8-80f8-a6b9-dde361833123",
+			"headers": "",
+			"url": "localhost:3000/todos/4/items/1",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"data": [
+				{
+					"key": "name",
+					"value": "learn how to dance",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "done",
+					"value": "true",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "PUT /todos/:todo_id/items/:id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1493702647996,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b8f8640f-7cb5-97df-4d2f-38ea9a2a502d",
+			"headers": "",
+			"url": "localhost:3000/todos",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"data": null,
+			"dataMode": "params",
+			"name": "# GET /todos",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1493644868167,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c23092a9-4e44-6210-6bb7-921530330663",
+			"headers": "//title: wabbalubbadingdong\n//created_by: 1\n",
+			"url": "localhost:3000/todos/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1493645122185,
+			"name": "DELETE /todos/:id",
+			"description": "",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"responses": []
+		},
+		{
+			"id": "f067baf2-c239-7742-0b6f-e76850c799a0",
+			"headers": "",
+			"url": "localhost:3000/todos/4/items",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "70d63462-976f-d3e5-37be-302056793bec",
+			"data": [
+				{
+					"key": "name",
+					"value": "learn how to dance",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "done",
+					"value": "false",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "GET /todos/:todo_id/items",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1493702595849,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

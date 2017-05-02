@@ -1,34 +1,17 @@
 # README
 
-find "Add the directory and file" on https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
+Tutorial followed to create the API
+https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 
-this is where we currently are
+Using Rails 5 to create a simple RESTful API
+    - using the RSpec testing framework
+    - Factory Girl, Database Cleaner, Shoulda Matchers and Faker gems are used to create Test data
+    - Application was built strictly following Test Driven Development principals
 
+    I have included my POSTMAN data for evidence of applications working capabilities
+    
 
+I would 100% go an have a read. Great Article, However it does require a bit of personal research
 
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+How to run the test suite
+$ bundle exec rspec
